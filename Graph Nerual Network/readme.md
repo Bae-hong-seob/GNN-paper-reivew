@@ -6,3 +6,4 @@ Paper review about Graph Neural Network in Korean
 3. GraphSAGE <br>
 3. GAT(Graph Attention) <br>
 4. KGCN(Knowledge Graph Convolution Network) <br>
+5. GSO(Graph Shift Operation) <br>
