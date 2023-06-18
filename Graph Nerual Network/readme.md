@@ -1,4 +1,4 @@
-Paper review about Graph Neural Network in Korean
+# Paper review about Graph Neural Network in Korean
 - KwangWoon University I-DNA(Intelligent Data Network AI Lab
 
 1. What is GNN(Graph Neural Network) ? <br>
