@@ -31,8 +31,8 @@
 ## 6/29
 
 ### 문제점
-1. 128개의 movieId만 추출 이후 1000명의 userId를 추출할 경우, movieId의 수나 userId의 수가 줄어들 수 있음.
-- 따라서 movieId 수를 고정시킴. 128로. 128개의 movieId에 대해 최소 1개씩 userId를 추출한 후 나머지(1000-128)에 대해서 userId samlping 진행
-- 이때 128개의 movieId 중 요청한 user가 한명이고, 겹칠 경우 나머지가 항상(1000-128)이 아닐 수 있음.
+~~1. 128개의 movieId만 추출 이후 1000명의 userId를 추출할 경우, movieId의 수나 userId의 수가 줄어들 수 있음.~~ 완료  
+- ~~따라서 movieId 수를 고정시킴. 128로. 128개의 movieId에 대해 최소 1개씩 userId를 추출한 후 나머지(1000-128)에 대해서 userId samlping 진행~~
+- ~~이때 128개의 movieId 중 요청한 user가 한명이고, 겹칠 경우 나머지가 항상(1000-128)이 아닐 수 있음.~~
 - 따라서 1000-set(reamin_userIds)를 통해 movieId는 128, userId는 1000이 유지되도록 함.
    
