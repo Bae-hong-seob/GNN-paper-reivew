@@ -44,3 +44,18 @@
 
 1. 6/29 문제점 해결.
 2. video prediction 모델 찾아볼 것.
+
+## 7/4
+
+### 해야할 것 : 
+1. 2019년 데이터를 2019년 1월 데이터로 줄이기.
+- 이 또한 변수로 설정하여 매번 데이터셋이 필터링 되게 해야함.
+- 전체 데이터셋은 2019년도로 고정.
+
+2. video frame prediction (keras) 모델 탑재하기.
+- 내가 만든 heatmap이 train이 되는 것. 기본적으로 12frame이 train이 되어 13frame이 정답인것.
+
+3. 분포를 이용해서 #users 내가 조절하기.
+- movieId 당 빈도수 분포
+- #Request / user 당 빈도수 분포를 활용.
+- N 명의 user 수만큼(예를 들면 1000명) #Request를 정한다음, movieId 당 빈도수 분포를 고려해서 어떤 movieId를 요쳥했는지 dataset 생성.(#Request 수 만큼 반복)
