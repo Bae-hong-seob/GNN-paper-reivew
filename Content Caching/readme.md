@@ -22,7 +22,7 @@
 ## 6/28
 
 ### 문제점
-~~1. hitmap 생성 시 row는 mecs, column은 movieId.~~
+~~1. hitmap 생성 시 row는 mecs, column은 movieId.~~  
 ~~- 이때 matrix 형태가 너무 이상하지 않나 ? 그리고 모든 movieId에 대한 정보를 가지기도 힘들고 매번 movieId가 가변적이라면 이미지를 학습하는데 의미가 없음~~  
 해결. sampling시 128개의 moveId만 추출.
 
@@ -48,14 +48,23 @@
 ## 7/4
 
 ### 해야할 것 : 
-~~1. 2019년 데이터를 2019년 1월 데이터로 줄이기.~~ 완료
-~~- 이 또한 변수로 설정하여 매번 데이터셋이 필터링 되게 해야함.~~
-~~- 전체 데이터셋은 2019년도로 고정.~~
+~~1. 2019년 데이터를 2019년 1월 데이터로 줄이기.~~ 완료  
+~~- 이 또한 변수로 설정하여 매번 데이터셋이 필터링 되게 해야함.~~  
+~~- 전체 데이터셋은 2019년도로 고정.~~  
 
-~~2. video frame prediction (keras) 모델 탑재하기.~~ 완료
-~~- 내가 만든 heatmap이 train이 되는 것. 기본적으로 12frame이 train이 되어 13frame이 정답인것.~~
+~~2. video frame prediction (keras) 모델 탑재하기.~~ 완료  
+~~- 내가 만든 heatmap이 train이 되는 것. 기본적으로 12frame이 train이 되어 13frame이 정답인것.~~  
 
-3. 분포를 이용해서 #users 내가 조절하기.
-- movieId 당 빈도수 분포
-- #Request / user 당 빈도수 분포를 활용.
-- N 명의 user 수만큼(예를 들면 1000명) #Request를 정한다음, movieId 당 빈도수 분포를 고려해서 어떤 movieId를 요쳥했는지 dataset 생성.(#Request 수 만큼 반복)
+~~3. 분포를 이용해서 #users 내가 조절하기.~~  
+~~- movieId 당 빈도수 분포~~  
+~~- #Request / user 당 빈도수 분포를 활용.~~  
+~~- N 명의 user 수만큼(예를 들면 1000명) #Request를 정한다음, movieId 당 빈도수 분포를 고려해서 어떤 movieId를 요쳥했는지 dataset 생성.(#Request 수 만큼 반복)~~ 
+
+## 7/6
+
+### 해야할 것 :
+1. google research sota 모델 탑재
+- 서버 컴퓨터 고치기 ..
+
+2. keras video frame prediction model load
+- 전체 파이프라인 끝까지 만들기
