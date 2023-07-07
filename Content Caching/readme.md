@@ -63,8 +63,8 @@
 ## 7/6
 
 ### 해야할 것 :
-1. google research sota 모델 탑재
-- 서버 컴퓨터 고치기 ..
+~~1. google research sota 모델 탑재~~  
+~~- 서버 컴퓨터 고치기 ..~~  
 
-2. keras video frame prediction model load
-- 전체 파이프라인 끝까지 만들기
+~~2. keras video frame prediction model load~~  
+~~- 전체 파이프라인 끝까지 만들기~~  
