@@ -68,3 +68,23 @@
 
 ~~2. keras video frame prediction model load~~  
 ~~- 전체 파이프라인 끝까지 만들기~~  
+
+## 7/17
+
+### 해야할 것 :
+~~1. 기존 코드 모듈화진행(predict, make_to_gif etc…)~~ 완료.  
+~~2. 각 predict(binary, mse, mse output layer no activate) 비교~~ 완료.  
+~~3. Truths와 각 mecs 별 집합셋 비교~~. 완료.
+
+### 문제점
+1. 각 predict 비교 시에 크게 다르지 않음. Output layer가 no activate인 경우 loss 기준 수렴이 잘 되지 않음. 결과도 좋지 않음
+2. 매 순간 나오는 결과값이 달라짐 seed를 고정하더라도. 이는 모델 파라미터가 매번 달라지기 때문이라고 해석
+3. Top32를 비교하였을 때 상당 부분을 맞추는 경우도 있지만 못맞추는 부분도 존재
+
+
+
+
+
+
+
+
